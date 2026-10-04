@@ -1,0 +1,6 @@
+{
+  "name": "CanPrice: Canadian Grocery Price Scraper & Data Exporter",
+  "description": "Scrape, compare, and export Canadian grocery food prices across Loblaws, Walmart, Metro, Sobeys, No Frills, Costco, and Save-On-Foods with Excel and CSV spreadsheet export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
