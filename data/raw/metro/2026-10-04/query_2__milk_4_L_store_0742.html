@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Épicerie en ligne | Metro </title>
+<style>	html {
+		font-size: 62.5%; 
+	}
+
+	body {
+		font-family: "roboto-regular","Arial","Helvetica","Sans-serif";
+	}
+	
+	h2{
+		font-size: 1.6rem;
+		font-size: 26px;
+	}
+
+	p, a{
+			font-size: 1.4rem;
+			font-size: 14px;
+	}
+* {
+	box-sizing: border-box;
+	}
+	
+	.conteneurcaptcha{
+		padding:3%; 
+		text-align: center;
+	}
+
+	.conteneurcaptcha img{
+		width: 100%;
+		max-width: 1100px;
+	}
+	
+	.conteneurdiv{
+		margin: 30px 0px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+  		-webkit-box-pack: center;
+  		-ms-flex-pack: center;
+  		justify-content: center;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+	}
+	
+	.conteneurdiv div{
+		width: calc(50% - 40px);
+		padding: 0 20px;
+		margin: 0;
+		line-height: 1.42;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.conteneurdiv h2{
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.flareInfo {
+		padding: 10px 40px;
+		text-align: center;
+	}
+	.conteneurdiv p {
+		margin: 0 0 0.75rem;
+		color: #252525;
+    	-webkit-margin-before: 1em;
+    	margin-block-start: 1em;
+    	-webkit-margin-after: 1em;
+    	margin-block-end: 1em;
+    	-webkit-margin-start: 0px;
+    	margin-inline-start: 0px;
+    	-webkit-margin-end: 0px;
+    	margin-inline-end: 0px;
+		margin-top: 0px;
+	}
+	
+	.conteneurdiv a{
+		margin-bottom: 0;
+		color: #000;
+    	text-decoration: underline;
+    	-webkit-transition: color 150ms ease;
+    	-o-transition: color 150ms ease;
+    	transition: color 150ms ease;
+		background: transparent;
+		cursor: pointer;
+	}
+	
+	.divfr{
+		border-right: solid 1px #000;
+		text-align: right;
+	}
+	
+	.diven{
+		text-align: left;
+	}
+
+	.conteneurcaptcha .logometro{
+		max-width: 100%;
+		width: 250px;
+	}
+	.flareAvoidBlock1,
+	.flareAvoidBlock2 {
+		padding: 20px 0;
+		background-color: #F4F4F4;
+	}
+	.flareAvoidBlock1 .steps p {
+		font-size: 16px;
+	}
+	.flareAvoidBlock2 .steps p {
+		font-size: 16px;
+	}
+	.flareAvoidBlock2 h2 {
+		font-family: "Roboto", "Arial", "Helvetica", "Sans-serif";
+		font-weight: 700;
+	}
+	.steps {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.steps div {
+		background-color: #ffffff;
+		border-radius: 15px;
+		position: relative;
+		padding: 2rem;
+		width: 100%;
+		max-width: 32rem;
+		margin: 2rem auto;
+	}
+	.stepNumber {
+		background-color: #D81E05;
+		border-radius: 50%;
+		color: #ffffff;
+		height: 40px;
+		width: 40px;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.footer-metro-cloudflare {
+		background-color: #d81e05;
+	}
+
+	.footer-metro-cloudflare svg {
+		margin: 0 auto;
+		display: block;
+		fill: white;
+		max-width: 20rem;
+		height: 8rem;
+	}
+@media screen and (max-width: 600px) {
+	p, a{
+			font-size: 1.1rem;
+			font-size: 11px;
+	}
+	
+	.conteneurdiv{
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+
+		}
+	.conteneurdiv h2{
+		font-size: 20px;
+		}
+	.divfr{
+		border-right:  0px ;
+		text-align: center;
+		}
+	.diven{
+		text-align: center;
+		}
+	.conteneurdiv div{
+		width: 87%;
+		margin-top: 40px;
+		}
+	.conteneurcaptcha .logometro{
+		max-width: 100%;
+		width: 150px;
+		}
+	}
+@media only screen and (min-width: 768px) {
+		.steps {
+			align-items: stretch;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 2rem 0;
+		}
+
+		.steps div {
+			max-width: 100%;
+			width: calc((100%/3) - 1.5rem);
+		}
+	}
+
+@media only screen and (min-width: 1200px) {
+		.steps div {
+			padding: 2rem 5rem;
+			width: calc((100%/3) - 6rem);
+		}
+	}	
+</style> 
+
+<meta http-equiv="refresh" content="360"></head>
+
+<body>
+<div class="conteneurcaptcha">
+	<p><img class="logometro" src="data:image/svg+xml;base64,PHN2ZyBpZD0ibG9nby1tZXRybyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjMwLjIzNSIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDIzMC4yMzUgNDgiPgogIDxnIGlkPSJsb2dvIj4KICAgIDxwYXRoIGlkPSJUcmFjw6lfMTk1MSIgZGF0YS1uYW1lPSJUcmFjw6kgMTk1MSIgZD0iTTE5NC45ODksMTY0LjQ2NGEyOC42NiwyOC42NiwwLDAsMS01LjM1OC0uNDgxLDE4LjM0OCwxOC4zNDgsMCwwLDEtMi44MDYtLjY2MywxOC42NTgsMTguNjU4LDAsMCwxLTYuMzA4LTMuMjQ0LDE0LjU3MywxNC41NzMsMCwwLDEtNC4wMjUtNS4wODQsMTUuMzc0LDE1LjM3NCwwLDAsMS0xLjQzOS02LjY4OSwyMC41NDQsMjAuNTQ0LDAsMCwxLC4zMjItMy41NTQsMjEuOTQsMjEuOTQsMCwwLDEsMy40MDktOC41MDdBMjMuMzI4LDIzLjMyOCwwLDAsMSwxODUsMTMwLjA4OGEzMC40MzIsMzAuNDMyLDAsMCwxLDE2LjktNC45NzdoLjA2NmEyNy41MTYsMjcuNTE2LDAsMCwxLDguOTkzLDEuNSwxOS41OTEsMTkuNTkxLDAsMCwxLDQuMjYsMi4wOTEsMTQuMjUsMTQuMjUsMCwwLDEsNC42NTgsNC45MTZBMTQuODQyLDE0Ljg0MiwwLDAsMSwyMjEuNywxNDFhMjEuMDI2LDIxLjAyNiwwLDAsMS0uMzYsMy44MjIsMjEuNjEzLDIxLjYxMywwLDAsMS0zLjk1OSw5LjM5MSwyMi41NzIsMjIuNTcyLDAsMCwxLTYuODE0LDYuMDQsMzEuODM1LDMxLjgzNSwwLDAsMS0xNS41MTQsNC4yMDdoLS4wNjRtLTEuMi05LjY0OWE3LjY4Myw3LjY4MywwLDAsMCwyLjc4NS41aC4wNjhhNy45MTYsNy45MTYsMCwwLDAsMy40MDktLjc0Myw3LjI3LDcuMjcsMCwwLDAsMi43NTEtMi4wNjUsMTEuNzQyLDExLjc0MiwwLDAsMCwyLjA2Ny0zLjM3NiwyMC44ODQsMjAuODg0LDAsMCwwLDEuMjkzLTQuNTg0LDIwLjE1MiwyMC4xNTIsMCwwLDAsLjMzMi0zLjM1NSwxMS4xLDExLjEsMCwwLDAtLjM1NS0yLjg5MSw2LjIxNCw2LjIxNCwwLDAsMC0xLjEyMy0yLjE4Myw1LjA1Niw1LjA1NiwwLDAsMC0yLjc1MS0xLjYzNCw4LjQ3Niw4LjQ3NiwwLDAsMC0xLjkzMi0uMjEzaC0uMDczYTguMiw4LjIsMCwwLDAtNi4wNzgsMi41NjcsMTAuOTMxLDEwLjkzMSwwLDAsMC0yLjE3NCwzLjI3LDE3LjczNywxNy43MzcsMCwwLDAtMS4zNzQsNC42NDEsMTkuMjA5LDE5LjIwOSwwLDAsMC0uMzU1LDMuNDc4di4wNDhjMCwyLjY2MS43MjksNC40MTMsMS44NzYsNS41MUE1LjEyNSw1LjEyNSwwLDAsMCwxOTMuNzg2LDE1NC44MTVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjUzNSAtMTE2LjQ2NCkiIGZpbGw9IiNkODFlMDUiLz4KICAgIDxwYXRoIGlkPSJUcmFjw6lfMTk1MiIgZGF0YS1uYW1lPSJUcmFjw6kgMTk1MiIgZD0iTTE2MC43MzYsMTI2LjE1N2gxNC44OHMtLjYyNSwzLjE4Mi0uODcxLDQuNDUxbC0uMDE2LjEyMS4wODUtLjA3NmExOC4xMTIsMTguMTEyLDAsMCwxLDUuNzg3LTMuNTcsMjMuNDQ5LDIzLjQ0OSwwLDAsMSw0LjAyMy0xLjI0MSwxNi40NDIsMTYuNDQyLDAsMCwxLDIuMzY4LS4zMzhjLjg2Mi0uMDgxLDEuNzUtLjExNiwyLjYtLjExNi44MjEsMCwxLjYwOC4wMzUsMi4yNzEuMDgzbDEuMS4xMjYtMi42NDMsMTIuNTQ5aC0uOTU5YTE5LjgxNCwxOS44MTQsMCwwLDAtMi4zMTMtLjEwOSwyOC4yMDYsMjguMjA2LDAsMCwwLTMuNC4xOCwxMy44NzEsMTMuODcxLDAsMCwwLTIuNzM5LjU4NSwyMC4zMzUsMjAuMzM1LDAsMCwwLTQuMDUxLDEuNzE0LDEwLjc0NCwxMC43NDQsMCwwLDAtMi43NTIsMi4xMDgsOS4yNTUsOS4yNTUsMCwwLDAtMS43NjEsMi41OTUsMTcuNDI2LDE3LjQyNiwwLDAsMC0xLjEyMiwzLjIzN2MtMSw0LjAyOC0zLjEsMTQuNzIzLTMuMSwxNC43MjNsLTE0Ljc4Ny4wMSw3LjQtMzcuMDMzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNy4zNDUgLTExNi4yNjEpIiBmaWxsPSIjZDgxZTA1Ii8+CiAgICA8cGF0aCBpZD0iVHJhY8OpXzE5NTMiIGRhdGEtbmFtZT0iVHJhY8OpIDE5NTMiIGQ9Ik0xNDIuNzksMTY0LjI5NGExMi42MTYsMTIuNjE2LDAsMCwxLTMuNTE0LTMuODc2LDEwLjY0NCwxMC42NDQsMCwwLDEtMS4zODUtNS4zODUsMTMuNjQ1LDEzLjY0NSwwLDAsMSwuMzU4LTMuMDU5bDMuMS0xMy4xMzZoLTUuNDY5bDEuNzM1LTguODI3aDUuMzU5bDEuMjMzLTYuMTU0LDE0LjgtMy43NDEtMi4wNTEsOS44OTVIMTY2LjZsLTEuNyw4LjgyN2gtOS4zNzlMMTUyLjgsMTUwLjE4OWE3Ljg3NCw3Ljg3NCwwLDAsMC0uMTk0LDEuNjksOC4yODgsOC4yODgsMCwwLDAsLjMzOCwyLjI2NGMxLjEyNCwzLjY1MSw0LjUsMy45NDcsNy45MjUsMy41MTFsLTEuNzQxLDkuMzkxYTMxLjA0NywzMS4wNDcsMCwwLDEtNi4xLjU4M2gtLjAwN2ExNi45NDIsMTYuOTQyLDAsMCwxLTEwLjIzNi0zLjMzNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjEwNiAtMTIwLjExNikiIGZpbGw9IiNkODFlMDUiLz4KICAgIDxwYXRoIGlkPSJUcmFjw6lfMTk1NCIgZGF0YS1uYW1lPSJUcmFjw6kgMTk1NCIgZD0iTTEyNC40NywxNjQuMDYxYTEzLjA1NiwxMy4wNTYsMCwwLDEtMS40NzMtLjIyNywyNS43NTcsMjUuNzU3LDAsMCwxLTMuNzEzLS45MzYsMTYsMTYsMCwwLDEtMTAuMzc4LTE1LjIwOXYtLjAxOWExOS4wMzgsMTkuMDM4LDAsMCwxLC4xOTQtMi42MzYsMjcuMzUxLDI3LjM1MSwwLDAsMSwyLjM0LTcuOTQyLDE5LjYsMTkuNiwwLDAsMSw0LjczMy02LjMsMjAuNjgyLDIwLjY4MiwwLDAsMSw3LjM3Ni00LjE1NSwzMi4zODcsMzIuMzg3LDAsMCwxLDEwLjI1Ny0xLjVjLjMxLDAsLjYzNy4wMTIuOTM3LjAxMmEyMC41NDIsMjAuNTQyLDAsMCwxLDUuODYsMS4wMDhjLjEzNy4wNTUuMjYxLjA4NS4zOTEuMTNhMTguNzA4LDE4LjcwOCwwLDAsMSw1LjY0MywzLjA4MSwxNS40MjcsMTUuNDI3LDAsMCwxLDQuMDU2LDQuOTYxLDE1LjE4NSwxNS4xODUsMCwwLDEsMS41NjEsNi44MjcsMjAuODM0LDIwLjgzNCwwLDAsMS0uNjU4LDQuOTc5bC0uMTg3LjcxN2gtLjg2OWwtMjguMTM0LS4xLS4wMjEuMDIxYy0uMDEyLjE2My0uMDEyLjI5My0uMDEyLjQ1N2E3LjgzLDcuODMsMCwwLDAsMi45NSw1LjgzMiwxMS4xMiwxMS4xMiwwLDAsMCw0LjExOCwyLjE4OCwxMy4zMzksMTMuMzM5LDAsMCwwLDMuODI5LjUyNWMuMzc3LDAsLjc1OCwwLDEuMTcyLS4wMzZBMzkuNTgxLDM5LjU4MSwwLDAsMCwxNDYuNDYsMTUzLjRsMS45NjEtLjc2Ny0zLjQ2OSw5LjE3Ny0uMzcyLjE3OGMtMy4zLDEuNDkyLTguNzczLDIuNDYtMTQuMzE0LDIuNDZoLS4wNzNhNDIuODIxLDQyLjgyMSwwLDAsMS01LjcyMy0uMzg0bTE0Ljc2OC0yNC41My4wMTItLjAyMWExMi4yNzYsMTIuMjc2LDAsMCwwLC4wODctMS4yNDN2LS4wMjRhNS4yLDUuMiwwLDAsMC0xLjU2My0zLjk2MSw1LjQsNS40LDAsMCwwLTIuNzI1LTEuMjY3LDguNDQ5LDguNDQ5LDAsMCwwLTEuNjQ4LS4xNjhoLS4wNzZhOS40LDkuNCwwLDAsMC05LjA1Miw2LjY0N2wwLC4wMzZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzkuODI1IC0xMTYuNDQ2KSIgZmlsbD0iI2Q4MWUwNSIvPgogICAgPHBhdGggaWQ9IlRyYWPDqV8xOTU1IiBkYXRhLW5hbWU9IlRyYWPDqSAxOTU1IiBkPSJNOTEuNTMsMTYzLjU0OGw1LjU3Ni0yMy45OTFhMy43NTUsMy43NTUsMCwwLDAsLjA5LS42ODR2LS4wMjlhMi41NjMsMi41NjMsMCwwLDAtLjg3Mi0xLjkyNywyLjc2MSwyLjc2MSwwLDAsMC0uNzg2LS41LDMuNDU0LDMuNDU0LDAsMCwwLTEuNDY0LS4zLDQuOCw0LjgsMCwwLDAtNC41ODQsMy40MDlMODMuOCwxNjMuNTQ4SDY5bDUuMTc5LTIyLjkyOGEyOC4wODYsMjguMDg2LDAsMCwxLDItNS45MzEsMTcuMSwxNy4xLDAsMCwxLDMuNTMtNC45OTQsMTUuNTMxLDE1LjUzMSwwLDAsMSw1LjUzNC0zLjQ3MSwyMy4wMzksMjMuMDM5LDAsMCwxLDguMDgyLTEuMjgzYy42LDAsMS4yNSwwLDEuOTIuMDQ3YTIxLjc4MiwyMS43ODIsMCwwLDEsMi4yODMuMjYzLDE0LjczNCwxNC43MzQsMCwwLDEsOC41ODQsNC43MzFsLjAxNy4wMTYuMDQ4LS4wMTZhMjcuMjYxLDI3LjI2MSwwLDAsMSw2LjY0MS0zLjUzLDIyLjA1OSwyMi4wNTksMCwwLDEsNy40MTMtMS40NjVoLjI4OWEyMy44MzcsMjMuODM3LDAsMCwxLDUuMDc2LjQ2NmMuNTI2LjExNiwxLjAxNi4yMywxLjQ5NC4zNzdhMTIuMDc5LDEyLjA3OSwwLDAsMSw0LjM5NCwyLjMzNyw5LjQ0OCw5LjQ0OCwwLDAsMSwyLjQ3MiwzLjU2OCwxMi4xMzYsMTIuMTM2LDAsMCwxLC43NjMsNC40NTksMTkuNTg3LDE5LjU4NywwLDAsMS0uNTI2LDQuNGwtNS4xMzMsMjIuOTU4SDExNC4xMTlsNS4xODYtMjMuODc0YTQuNDg2LDQuNDg2LDAsMCwwLC4wNjYtLjY3MnYtLjAyNmEyLjY3NiwyLjY3NiwwLDAsMC0uODc0LTEuOTU2LDUuMTU4LDUuMTU4LDAsMCwwLS42MzktLjQsMy4zNzIsMy4zNzIsMCwwLDAtMS41ODQtLjM2aC0uMDIxYTQuNzkzLDQuNzkzLDAsMCwwLTQuNTg3LDMuMzk1bC00Ljk4NywyMy44OTRIOTEuNTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02OSAtMTE2LjU4OCkiIGZpbGw9IiNkODFlMDUiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="logo Metro"></p>
+	<div class="conteneurdiv">
+		<div class="divfr">
+			<h2>VOUS Y ÊTES PRESQUE</h2>
+			<p>Avant d’aller plus loin, merci de nous confirmer que vous êtes bien humain.</p>
+		</div>
+		<div class="diven">
+			<h2>ALMOST THERE</h2>
+			<p>Before going any further, please confirm that you are human.</p>
+		</div>
+	</div>
+	<h1 style="color:rgb(255, 255, 255); text-align: center;"><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'OuIX6ujco7Ue6TtRoY9_qNbhauQ3QxRxgl6jUs_VABE-1791140407-1.2.1.1-dVHpPMDB7jgxzpB1N1FdbFjyKgKNUB.AdY6sifdP83B9WfmiybxdM6I5FV1E34C1',cITimeS: '1791140407',cRay: 'a4566d7dde21fe29',cTplB: '0',cTplC:1,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/en/online-grocery/search?filter=2%25%20milk%204%20L\u0026__cf_chl_tk=TOy1T.oDdEd_BY_2cyqDXtlJm9tZsQ1KBRV3EfqMW5I-1791140407-1.0.1.1-v9c8UPFnQmhu3fuKPLQvnrfNEaIHigHEdRApv52v93w",cvId: '3',cZone: 'www.metro.ca',fa:"/en/online-grocery/search?filter=2%25%20milk%204%20L\u0026__cf_chl_f_tk=TOy1T.oDdEd_BY_2cyqDXtlJm9tZsQ1KBRV3EfqMW5I-1791140407-1.0.1.1-v9c8UPFnQmhu3fuKPLQvnrfNEaIHigHEdRApv52v93w",md: 'UWvjrXu2P4NRcb.xwGdhKeg7FM.mG6rx3lgqBxylX9A-1791140407-1.2.1.1-ZoxVlYRBOgLxc2LoYNJHTynSswWxaZYwornjF7naEdvOJDnMXsbnbRH21CEjNOGY9w2UwO7JB0vUyrlOh8pcEHBN7UZoAJ9KR7zNgun3iQGhg78C15__Oorfm6an7mzpciCcoXcnhJBmyaqhHxZFpu6joL3qAGvPUb0_zu81fNbiCF32eTO1ZgL1K8gBpAYsy2YKN_CrfR8oNiP01WmXSm85sWhwXSFfCGE1a3M8O3.jKbPXfqq2EgZ4wiSbzxswJZjT3MqXD9ffQo2yadeEEtchZYx4Ed1CEnCDeXeXaVAKaYUmnkoy2kSiHS76wIfa78ws2bBPAf_K2w6zuy5UdJWtbg6ZoGJ1N4rGjBWlIWWFGHqe2FdrsPEVQ6fkhN0hPdLTDVfE_BkSWlIEIIKtkjGb6j2VVEIz1O9kZ_OJ5KfEoQrRi.MjLESieTmnNlFMVrbwUA0J9w5CbEJCexZAh719WJOIkgoaglTOV3tYDF.uQ51Kp.VoLMvYePcajFyGZcHGgKQbCd1p9I_b6Hz5SDHTZZSZV7Zn_MmS8Oqzo6ZZd.fgKcgpAi.mhL8QoxgnPNKWjVtcxqE0nfBwCFqaVDyfnixT6MielQELhpgAdt0CP9ToLJg2KjuL.q782NMhxksEmw.xyTHwAJOXp1c0Ztxr8GUM7rZpM2nNt9fidsnlzvWtmiaaEOUgYID8rMepwcl8VeE_25VeWMc8oWddBxHG66Z2EZ67nGvE1JKkHEiZ91t9QuQa7ovgHwff6.1eJEh4gAtMrN9gMMBUylD7cnDmuIPGTZs6qu1vEmOs0fMyUJJlW0NPndtDx0MJ3J2xJg2QMR2L7vGEzBLvBhrbfX3RRel3A5jQHoIN9gbB68m_FK1teFSpR5Ond7RSD1dOal69OmYjOXb5kKxdkONB7aaAig1MDu_MB.7pGcI0fVLZPKP8iAs1jkRFX.bExjP4jBSpx6zQXG38OclNmOmgs1EUgW02odH6oTBd7_T8bDCeUI9hhtbCka.y2yJ2SbaUuWh.mQgZd1Qwep43hMxsYHA48mVlIhdlxpJjnXqtf.a7ZC4ZVbnW_3DpcGWzoGYom55aRQ0FAY8_9tBgQSBy_A9X9FBShbSv4XFcQI57X07NP4tXfBhawvJOlz0q4HZpMDV7L4ZipjTJxPbUY3YwgqxitQffgftvr9U5q1VxRJDhSHaILV1puqg39V9zeEs6bPHrs9IqE4CzY8pY7yAD_A',mdrd: 'xnMMcHc3stY9l9g7jUnelmjQrYleUnhweQyr_f8vCk0-1791140407-1.2.1.1-sx1h0.90MqJyYWV_mWZF4l3lfZOkrzTubdz3NLBwJombArpazsgdcW9BMjNTfy8SiHSzoenchuiuc20wyzz5bhDReD32d_QXW2Fq4S_v0QnMCN_rjAxwrdVCiIy2B_4jFGvcPJ1keuDnd.vwyov9bWnr3Qp.ctXU7rBv7bhba2LmKQek7cpEtqb5akFpewRNm7bPfzpfM6Gn8YIPMxJ.6xjYUWj_Rs4FaVbmyXQcTfcgTwZ5hUw2Ngpw6OE_jDK9PfmuyXuj9EeSaJSQsr47aqyh_MFM6K26cTfBCqT2.hkSACChqPYuuEp5A4DdB7P6GLLe6keEcK7fAhtybrySt7pZDRfi0O204AJloYYS0srOlK7ilu13ALu0fHACGgZ3jh0Q.x52Umg.Uo4jvqA_dsjJZfg3p9lvUeViAD_2nyk',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a4566d7dde21fe29';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/en/online-grocery/search?filter=2%25%20milk%204%20L\u0026__cf_chl_rt_tk=TOy1T.oDdEd_BY_2cyqDXtlJm9tZsQ1KBRV3EfqMW5I-1791140407-1.0.1.1-v9c8UPFnQmhu3fuKPLQvnrfNEaIHigHEdRApv52v93w"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></h1>   
+</div>
+<div class="flareAvoidBlock1">
+    <div class="flareInfo"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iaWNvbi1zcGVlY2gtYnViYmxlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+CiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNTMyNSIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNTMyNSIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZDgxZTA1Ii8+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KICA8ZyBpZD0iR3JvdXBlXzcwMjEiIGRhdGEtbmFtZT0iR3JvdXBlIDcwMjEiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4KICAgIDxwYXRoIGlkPSJVbmlvbl8zIiBkYXRhLW5hbWU9IlVuaW9uIDMiIGQ9Ik02My4wNTcsNDYuNTg2LDU0LjI4LDQzLjY2MWEyMC4wMiwyMC4wMiwwLDAsMS0yMy44MzctMi4xNTMuNjM2LjYzNiwwLDEsMSwuODUtLjk0NywxOC43NTIsMTguNzUyLDAsMCwwLDIyLjU2NiwxLjg2NS42MjYuNjI2LDAsMCwxLC41MzktLjA2NWw3Ljg1NCwyLjYxOC0yLjYxNy03Ljg1NGEuNjQ4LjY0OCwwLDAsMSwuMDY1LS41NDNBMTguNzcyLDE4Ljc3MiwwLDAsMCw0My44MjQsNy43NTJhMTkuMDY0LDE5LjA2NCwwLDAsMC0zLjEzNC4yNi42MzYuNjM2LDAsMSwxLS4yMDgtMS4yNTUsMjAuMzEzLDIwLjMxMywwLDAsMSwzLjM0Mi0uMjc3QTIwLjA0NCwyMC4wNDQsMCwwLDEsNjAuOTM1LDM3LjAwNmwyLjkyOCw4Ljc3OGEuNjM5LjYzOSwwLDAsMS0uNjA1LjgzNkEuNi42LDAsMCwxLDYzLjA1Nyw0Ni41ODZaTS4xODcsMzkuOTU2QS42MzkuNjM5LDAsMCwxLC4wMzIsMzkuM2wyLjkyNC04Ljc3NGEyMC4xMTksMjAuMTE5LDAsMSwxLDYuNjU5LDYuNjU1TC44MzgsNDAuMTA5YS42My42MywwLDAsMS0uMi4wMzFILjYyN0EuNjMuNjMsMCwwLDEsLjE4NywzOS45NTZabTkuODQ5LTQuMDA3YTE4LjgzOCwxOC44MzgsMCwxLDAtNS44NDQtNS44NDQuNjMyLjYzMiwwLDAsMSwuMDY4LjU0TDEuNjQzLDM4LjUsOS41LDM1Ljg4MWEuNzA5LjcwOSwwLDAsMSwuMi0uMDMxQS42LjYsMCwwLDEsMTAuMDM2LDM1Ljk1Wm04LjU3NC01Ljc4OGEuOTc1Ljk3NSwwLDAsMSwuOTc0LS45NzhoLjAwN2EuOTc5Ljk3OSwwLDEsMS0uOTguOTc4Wm0uMzM2LTQuNTc4di0uNjMzYTcuMjY2LDcuMjY2LDAsMCwxLDMuMjY3LTUuODc1QTQuMzY5LDQuMzY5LDAsMCwwLDI0LDE0LjcwNmE0LjQ1Nyw0LjQ1NywwLDAsMC0zLjYtMy41Myw0LjU4OCw0LjU4OCwwLDAsMC0zLjc0Ny45ODksNC4zNyw0LjM3LDAsMCwwLTEuNTY1LDMuMzQxLjYzNi42MzYsMCwwLDEtMS4yNzIsMCw1LjYzLDUuNjMsMCwwLDEsMi4wMTgtNC4zMTNBNS44NjYsNS44NjYsMCwwLDEsMjAuNjIsOS45MjJhNS43NTEsNS43NTEsMCwwLDEsNC42MzQsNC41NjEsNS42MzEsNS42MzEsMCwwLDEtMi4zLDUuNjMsNiw2LDAsMCwwLTIuNzMzLDQuODM4di42MzNhLjYzNi42MzYsMCwxLDEtMS4yNzIsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgOC42MzcpIiBmaWxsPSIjZDgxZTA1IiBzdHJva2U9InJnYmEoMCwwLDAsMCkiIHN0cm9rZS13aWR0aD0iMSIvPgogIDwvZz4KPC9zdmc+Cg==" alt="icon speech bubble">
+        <h2>Comment éviter cette étape à l’avenir?</h2>
+        <p>Trois possibilités s’offrent à vous :</p>
+    </div>
+    <div class="steps">
+        <div><span class="stepNumber">1</span>
+            <p>Lancez une analyse antivirus sur vos appareils personnels.</p>
+        </div>
+        <div><span class="stepNumber">2</span>
+            <p>Demandez à votre administrateur réseau d’effectuer une analyse pour détecter de potentielles
+                anomalies.</p>
+        </div>
+        <div><span class="stepNumber">3</span>
+            <p>Téléchargez la version 2.0 de Privacy Pass sur la <a
+                    href="https://addons.mozilla.org/fr/firefox/">Boutique d’extensions de Firefox</a>.</p>
+        </div>
+    </div>
+    <div class="flareAvoidBlock2">
+        <div class="flareInfo">
+            <h2>How to avoid this step in the future?</h2>
+            <p>You have three options:</p>
+        </div>
+        <div class="steps">
+            <div><span class="stepNumber">1</span>
+                <p>Run an anti-virus scan on your personal devices.</p>
+            </div>
+            <div><span class="stepNumber">2</span>
+                <p>Ask your network administrator to run a scan for potential anomalies.</p>
+            </div>
+            <div><span class="stepNumber">3</span>
+                <p>Download Privacy Pass version 2.0 from the <a
+                        href="https://addons.mozilla.org/en-US/firefox/">Firefox Add-ons Store</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
